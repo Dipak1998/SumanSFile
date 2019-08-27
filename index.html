@@ -31,6 +31,9 @@
             text-align: center;
             color:red;
         }
+        div.image1 img{
+            width: 100%;
+        }
 
         @media screen and (min-width: 400px) {
             body {
@@ -38,13 +41,23 @@
                 background-repeat: no-repeat;
                 background-size: 168% 168%;
                 }
+                div.detail{
+
+                }
                 div.detail div>p{
                  text-align:center;
                  color:red;
                  }
             
                  div.shyari{
-                     text-align: center;
+                     /* text-align: center; */
+                     font-size: 40px;
+                     /* position: fixed;
+                     bottom:280px;
+                     right: 40px;
+                     left:10px;
+                     top:420px; */
+                     
                      
                  }
                  div.From h1{
@@ -55,7 +68,7 @@
     </style>
     <body>
                 <!-- <bgsound src="song.mp3"></bgsound> -->
-                <audio controls autoplay loop>
+                <audio id="song" controls autoplay loop>
 
                 <source src="song.mp3" autoplay="true" type="audio/mpeg">
                     
@@ -90,5 +103,11 @@
                         <div class="image1"><img src="SSpic.jpg"></div>
                         <div class="From"><h1>From Your SweetHeart</h1></div>
                     </div>
+
+        <script>
+            var audio = document.getElementById('song');
+            console.log(audio);
+            audio.play().catch((e)=>console.error(e));
+        </script>
     </body>
 </html>
