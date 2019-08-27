@@ -1,0 +1,94 @@
+<html>
+    <head>
+
+    </head>
+    <style>
+        /* div.detail{
+            display: flex;
+            }
+        div.detail div *{
+                flex: 1;
+            }
+        div.detail div.image1{
+            height: auto;
+            width: auto;
+        }
+        div.detail div.image2{
+            height: auto;
+            width: auto;
+        } */
+
+        div.detail div.Text marquee h1{
+            color: blue;
+        }
+        div.detail div.Text marquee h2{
+            color: red;
+        }
+        div.detail div.Text marquee h3{
+            color: rgb(235, 83, 202);
+        }
+        div.detail div p{
+            text-align: center;
+            color:red;
+        }
+
+        @media screen and (min-width: 400px) {
+            body {
+                background-image: url("download1.jpg");
+                background-repeat: no-repeat;
+                background-size: 168% 168%;
+                }
+                div.detail div>p{
+                 text-align:center;
+                 color:red;
+                 }
+            
+                 div.shyari{
+                     text-align: center;
+                     
+                 }
+                 div.From h1{
+                     color:blue;
+                     float: right;
+                 }
+        }
+    </style>
+    <body>
+                <!-- <bgsound src="song.mp3"></bgsound> -->
+                <audio controls autoplay loop>
+
+                <source src="song.mp3" autoplay="true" type="audio/mpeg">
+                    
+                  </audio>
+                  <!-- <embed src="song.mp3" autostart=true AutoPlay="true" loop="true" hidden="true" preload="true"> -->
+                <!-- <embed src="song.mp3" type="audio/mpeg" loop="true" hidden="true" autostart="true"> -->
+
+                    <div class="detail">
+                        <div class="Text">
+                                <marquee behavior="alternate"><b>
+                                        <h1>You Are My World</h1>
+                                        </b></marquee>
+                                        <marquee behavior="alternate" direction="right">
+                                        <b><h2>I Love You Meri Jaan</h2></b>
+                                        </marquee>
+                                        <marquee behavior="alternate"><b>
+                                                <h3>***Miss You Mere Babu***</h3>
+                                        </b></marquee>
+                        </div>
+                        <div class="shyari">
+                           <p>
+                                कहतें हैं कि मोहबत एक बार होती है,
+                            </p>
+                            <p>
+                                 पर मैं जब जब तुझे देखता हूँ,
+                            </p>
+                            <p>
+                                मुझे हर बार होती है॥
+                            </p>
+                                
+                        </div>                       
+                        <div class="image1"><img src="SSpic.jpg"></div>
+                        <div class="From"><h1>From Your SweetHeart</h1></div>
+                    </div>
+    </body>
+</html>
